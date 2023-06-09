@@ -1,0 +1,16 @@
+main{
+    background-image: url('/images/image\ background\ -\ main\ section.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 11px solid var(--pinkColor);
+    min-height: 85vh;
+    position: relative;
+}
+.title{
+    font-size:4.8rem ;   
+}
+.copyContainer{
+    position: absolute;
+    bottom: 5%;
+}

@@ -1,0 +1,182 @@
+.Ourprocess{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.Ourprocess .container{
+    overflow: hidden;
+    grid-template-columns: 1fr .2fr 1fr ;
+    grid-template-rows: repeat(auto-fill);
+    grid-template-areas: ". flag1 child1"
+                         "child2 flag2 ."
+                         ". flag3 child3"
+                         "child4 flag4 ."
+                         ". flag5 child5 "
+                         "child6 flag6 ."
+                         ". flag7 child7";
+                         place-items: center;
+    
+}
+
+.step{
+
+    width: 100%;
+    position: relative;
+
+}
+.step-copy{
+    padding: 1em;
+    width: 100%;
+}
+.step-copy h3{
+    color: var(--pinkColor);
+    font-weight:700 ;
+    font-size: 1.2rem;
+}
+.flag-container{
+    position: relative!important;
+    width:4em;
+    height: 30%;
+
+}
+.flag-container span{
+  width: 50px;
+  height: 50px;
+  padding: 1em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.flag-container hr{
+    width: 20em;
+    transform: rotate(270deg);
+    height: 5px;
+    background: var(--purpleColor);
+    border-radius: 5px;
+    position: absolute;
+    left: -143px;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1;
+
+}
+
+.step:nth-child(1){
+    grid-area: child1;
+    text-align: left;
+}
+.step:nth-child(2){
+    grid-area: child2;
+
+    text-align: right;
+}
+.step:nth-child(3){
+    grid-area: child3;
+    text-align: left;
+}
+.step:nth-child(4){
+    grid-area: child4;
+    text-align: right;
+}
+.step:nth-child(5){
+    grid-area: child5;
+    
+    text-align: left;
+}
+.step:nth-child(6){
+    grid-area: child6;
+    text-align: right;
+}
+.step:nth-child(7){
+    grid-area: child7;
+    text-align: left;
+}
+.flag-container.one{
+    grid-area:flag1;
+}
+
+.flag-container.two{
+    grid-area:flag2;
+
+}
+.flag-container.three{
+    grid-area:flag3;
+
+}
+.flag-container.four{
+    grid-area:flag4;
+
+}
+.flag-container.five{
+    grid-area:flag5;
+
+}
+.flag-container.six{
+    grid-area:flag6;
+
+}
+.flag-container.seven{
+    grid-area:flag7;
+
+}
+.flag-container span {
+    width: 15px;
+    height: 15px;
+    padding: .5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 43px;
+    z-index: 1;
+    background-color: var(--pinkColor);
+}
+.Ourprocess img{
+    max-width: 20.8rem;
+}
+
+.Ourprocess-section{
+    position: relative;
+}
+.world, .planet{
+    position: absolute;
+    max-height: 45.5rem;
+    width: auto;
+    z-index: -1;
+}
+
+.world{
+    left: 0;
+    top: 20%; 
+}
+.planet{
+    right: 0;
+    bottom: -5%;
+}
+@media screen and (max-width: 575px) {
+    .Ourprocess .container{
+
+        grid-template-areas: "flag1 child1 child1"
+                         "child2 child2 flag2"
+                         "flag3 child3 child3"
+                         "child4 child4 flag4"
+                         "flag5 child5 child5 "
+                         "child6 child6 flag6"
+                         "flag7 child7 child7";
+        
+    }
+}

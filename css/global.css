@@ -1,0 +1,187 @@
+:root{
+    --black:#1E1E1E;
+    --pinkColor:#C41330;
+    --pinklinghtColor:#FF8585;
+    --purpleColor:#BB99FE;
+    --elementpadding: 2.7rem;
+    --blackOpacified:#00000095;
+}
+
+body{
+    margin: 0;
+    font-family: "",system-ui, -apple-system;
+
+}
+.container{
+    max-width:1065px ;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.flex.center{
+    place-content: center;
+}
+.flex.space-between{
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+    body{
+        margin: 0;
+        padding: 0; 
+        font-size: 20px;
+        color: white;
+        /*background-image: url('/images/background-start.svg');*/
+        font-weight: 400;
+        background-color: black;
+    
+        
+    }
+    *{
+        font-family: 'Outfit',system-ui, -apple-system, BlinkMacSystemFont;
+    }
+    .gradient-text{
+        background: -webkit-linear-gradient(var(--pinklinghtColor),var(--pinkColor));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+    a{
+        text-decoration: none;
+        font-weight: 400;
+        color:white;
+        display: inline-block;
+        
+    }
+    li{
+        
+        list-style: none;
+    }
+    .flex{
+        display: flex;
+        gap: 3.02rem ;
+        align-items: center;
+        
+    }
+    .flex.row-reverse{
+        flex-direction: row-reverse;
+    }
+    .flex.column-reverse{
+        flex-direction: column-reverse;
+    }
+    .flex .space-around{
+        justify-content: space-around;
+    }
+    .flex.space-between{
+        justify-content: space-between
+    }
+    .flex.space-evenly{
+        justify-content: space-evenly;
+        
+    }
+    
+    .btn{
+        color: white;
+        padding: 1.1rem 2.3rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-radius:90px ;
+        background-color: transparent;
+        min-width: 9rem;
+        width: fit-content;
+        height: fit-content;
+        border-color: none;
+        font-size: 0.75rem;
+        font-weight: 800;
+        cursor: pointer;
+        text-align: center;
+        
+    }
+    .btn.pink{
+        background-color: var(--pinkColor);
+        border: none;
+    }
+    .btn.black{
+        background-color: black;
+    }
+    .btn.border-white{
+        border: 1px solid white;
+    }
+    h1,p{
+        margin: 1rem 0;
+    }
+    .textshadow{
+        text-shadow:2px 2px 5px black;
+    }
+.container{
+    max-width: 1160px ;
+    margin: 0 auto;
+    padding:1rem;
+    height: 100%;
+}
+.grid{
+    display:grid;
+    gap: 1em;
+}
+.grid.twoColumns{
+    grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
+}
+.grid.center{
+    place-items: center;
+    place-content: center;
+}
+
+.grid.space-evenly{
+    justify-content: space-evenly;
+}
+
+.sub-title{
+    font-size:3rem;
+    color: var(--pinkColor);
+    font-weight: 800;
+}
+
+.text_align_left{
+    text-align: left!important;
+
+}
+
+.sub-title.uppercase{
+    text-transform: uppercase;
+}
+
+.center{
+    text-align: center;
+}
+
+.container-texts, .container-image{
+    width: 50%;
+}
+
+.icon{
+    width: 4rem;
+    max-height: min-content;
+}
+
+menu{
+    padding: 0;
+}
+
+.blackColor{
+    color: black;
+    font-weight: 800;
+}
