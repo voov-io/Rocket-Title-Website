@@ -45,7 +45,7 @@ img{
         padding: 0; 
         font-size: 20px;
         color: white;
-        background-image: url('/images/background-start.webp');
+        background-image: url('../images/background-start.webp');
         font-weight: 400;
         background-color: rgba(0, 0, 0, 0.081);
         background-size: contain;
