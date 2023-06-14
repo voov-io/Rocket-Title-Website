@@ -43,7 +43,7 @@
     position: relative!important;
     width:4em;
     height: 30%;
-
+    z-index: 4;
 }
 .flag-container span{
   width: 50px;
