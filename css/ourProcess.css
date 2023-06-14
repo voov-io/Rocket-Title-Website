@@ -1,9 +1,14 @@
+.Ourprocess-section{
+
+    overflow: hidden;
+}
 .Ourprocess{
     position: relative;
-    overflow: hidden;
     text-align: center;
 }
 .Ourprocess .container{
+    position: relative;
+    z-index: 99;
     overflow: hidden;
     grid-template-columns: 1fr .2fr 1fr ;
     grid-template-rows: repeat(auto-fill);
@@ -22,6 +27,7 @@
 
     width: 100%;
     position: relative;
+    z-index: 3;
 
 }
 .step-copy{
@@ -53,7 +59,7 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  z-index: 1;
+  z-index:6;
 }
 
 .flag-container hr{
@@ -66,7 +72,7 @@
     left: -143px;
     right: 0;
     margin: 0 auto;
-    z-index: -1;
+    z-index: 0;
 
 }
 
@@ -142,7 +148,7 @@
     left: 0;
     right: 0;
     margin: 0 43px;
-    z-index: 1;
+    z-index: 9!important;
     background-color: var(--pinkColor);
 }
 .Ourprocess img{
@@ -156,12 +162,13 @@
     position: absolute;
     max-height: 45.5rem;
     width: auto;
-    z-index: -1;
+    z-index: 2;
+
 }
 
 .world{
     left: 0;
-    top: 20%; 
+    top: 20%;
 }
 .planet{
     right: 0;
@@ -179,4 +186,17 @@
                          "flag7 child7 child7";
         
     }
+    .flag-container hr {
+        width: 10em;
+        transform: rotate(270deg);
+        height: 4px;
+        background: var(--purpleColor);
+        border-radius: 5px;
+        position: absolute;
+        left: -54%;
+        right: 0;
+        margin: 0 auto;
+        z-index: 0;
+    }
+
 }
