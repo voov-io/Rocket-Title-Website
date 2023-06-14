@@ -12,9 +12,9 @@
     <header>
         <div class="container flex space-between">
             <picture>
-                <img src="images/Rockket title Logo -white.png" alt="">
+                <img class="logo" src="images/Rockket title Logo -white.png" alt="">
             </picture>
-            <nav>
+            <nav class="flex menu--items">
                 <ul class="flex space-between">
                     <li><a href="http://">About</a></li>
                     <li><a href="http://">Consumers</a></li>
@@ -22,10 +22,16 @@
                     <li><a href="http://">Services</a></li>
                     <li><a href="http://">Services</a></li>
                 </ul>
+
+                <menu>
+                    <a href="#" class="btn border-white">Contact Us</a>
+                </menu>
             </nav>
-            <menu>
-                <a href="#" class="btn border-white">Contact Us</a>
-            </menu>
+            <button class="McButton" id="McButton"  aria-label="hambuerguer menu">
+                <b id="McBar1"></b>
+                <b id="McBar2"></b>
+                <b id="McBar3"></b>
+            </button>
         </div>
     </header>
     <main>
@@ -131,27 +137,11 @@
             <img class="planet" src="images/img planet.webp" alt="planet world image">
         </div>
     </section>
-    <Section class="services">
-        <div class="container flex center">
-            <div class="container-copy">
-                <h2 class="sub-title uppercase text_align_left">Main<br> Services</h2>
-                <ul>
-                    <li>Residential Title</li>
-                    <li>Closing And Escrow Services</li>
-                    <li>Searches And New Orders</li>
-                    <li>Survey coordination</li>
-                </ul>
-                <a class="btn pink" href="http://">CONTACT US NOW</a>
-            </div>
-            <div class="container-img services">
-                <img src="images/galaxy - Rockettitle services.webp" alt="">
-            </div>
-        </div>
-    </Section>
-    <Section class="services">
+
+    <section class="services">
         <div class="container flex center row-reverse">
-            <div class="container-texts">
-                <h2 class="sub-title uppercase text_align_left">Why People<br> choose us?</h2>
+            <div class="container-texts text_align_left">
+                <h2 class="sub-title uppercase">Why People<br> choose us?</h2>
                 <menu class="grid twoColumns">
                     <div class="service-container flex">
                         <img class="icon" src="icons/Personalized _br_Service.webp" alt="">
@@ -186,10 +176,10 @@
                 <a class="btn pink" href="http://">GET A SERVICE</a>
             </div>
             <div class="container-img services">
-                <img src="images/Astronaut  -rocket title.webp.webp" alt="">
+                <img class="astronauta" src="images/Astronaut  -rocket title.webp.webp" alt="">
             </div>
         </div>
-    </Section>
+    </section>
     <section class="call-to-action-v2">
         <div class="container center ">
             <p class="blackColor">ARE YOU READY?</p>
@@ -233,29 +223,36 @@
                        </ul>
                    </div>
                    <div class="sub-footer-container">
-                    <h2>Contact</h2>
-                    <ul>
-                        <li><a href="">4573 Bank Street<br>
-                            Virginia Beach, VA 23462</a></li>
-                        <li><a href="">orders@rockettitle.com</a></li>
-                        <li><a href="">Phone: 757.306.4668<br>
-                            Fax: 757.389.8749</a></li>
-
-                    </ul>
-                </div>
+                        <h2>About</h2>
+                        <ul>
+                            <li><a href="">Our Team</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                   <div class="sub-footer-container">
+                        <h2>Contact</h2>
+                        <ul>
+                            <li class="icon-container flex oneGap"><img class="icon mini" src="icons/location icon.webp" alt=""> <a href="">4573 Bank Street<br>
+                                Virginia Beach, VA 23462</a></li>
+                            <li class="icon-container flex oneGap"><img class="icon mini" src="icons/Email icon.webp" alt=""><a href="">orders@rockettitle.com</a></li>
+                            <li class="icon-container flex oneGap"><img class="icon mini" src="icons/phone icon.webp" alt=""><a href="">Phone: 757.306.4668<br>
+                                Fax: 757.389.8749</a></li>
+                        </ul>
+                    </div>
                 </div >
             </div>
         </div>
         <div class="sub-footer container">
-            <div class="social-container">
+            <div class="social-container flex center noGap">
                <a href="https://www.facebook.com/RocketTitle/"><img loading="lazy" width="35" height="35"  class="icon" src="icons/Facebook icon.webp" alt="Facebook RocketTitle"></a>
-               <a href="https://www.instagram.com/voov_io/"><img loading="lazy" width="35" height="35" class="icon" src="icons/Instagram icon.webp" alt="Instagram RocketTitle "></a>
-               <a href="https://www.youtube.com/@VOOV_io"><img loading="lazy" width="35" height="35"  class="icon"src="icons/Youtube icon.webp" alt="Youtube RocketTitle "></a>
+               <a href="https://www.instagram.com/rockettitleinc/"><img loading="lazy" width="35" height="35" class="icon" src="icons/Instagram icon.webp" alt="Instagram RocketTitle "></a>
+               <a href="https://www.youtube.com/channel/UCPtuEd1Umrse9v0VOBwKaUg"><img loading="lazy" width="35" height="35"  class="icon"src="icons/Youtube icon.webp" alt="Youtube RocketTitle "></a>
             </div>
         </div>
         <div class="copyright">
             <p>Rocket Title. Copyright All Rights Reserved © 2023</p>
          </div>
-       </footer>
+    </footer>
+    <script src="js/mobile-menu.js"></script>
 </body>
 </html>

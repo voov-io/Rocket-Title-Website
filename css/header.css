@@ -1,3 +1,27 @@
 header{
     background-color: var(--blackOpacified);
 }
+
+header .container{
+    position: relative;
+}
+.menu--items.active{
+    display: block!important;
+    position: absolute;
+    right: 0%;
+    top: 100%;
+    z-index: 9;
+    background: black;
+    padding: 2rem;
+}
+@media screen and (max-width:1025px) {
+    .menu--items{
+        display: none!important;
+    }
+    .menu--items, .menu--items ul {
+        flex-direction: column;
+    }
+    header menu .btn.border-white{
+        border-color: var(--pinkColor);
+    }
+}

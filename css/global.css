@@ -4,7 +4,7 @@
     --pinklinghtColor:#FF8585;
     --purpleColor:#BB99FE;
     --elementpadding: 2.7rem;
-    --blackOpacified:#00000095;
+    --blackOpacified:#0000009c;
 }
 
 body{
@@ -20,7 +20,8 @@ body{
     display: flex;
 }
 .flex.center{
-    place-content: center;
+    align-items: center;
+    justify-content: center;
 }
 .flex.space-between{
     justify-content: space-between;
@@ -44,11 +45,16 @@ img{
         padding: 0; 
         font-size: 20px;
         color: white;
-        /*background-image: url('/images/background-start.svg');*/
+        background-image: url('/images/background-start.webp');
         font-weight: 400;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.081);
+        background-size: contain;
+        background-repeat: round;
     
         
+    }
+    section,footer, header{
+        background-color: var(--blackOpacified);
     }
     *{
         font-family: 'Outfit',system-ui, -apple-system, BlinkMacSystemFont;
@@ -152,7 +158,7 @@ img{
 .sub-title{
     font-size:3rem;
     color: var(--pinkColor);
-    font-weight: 800;
+    font-weight: bold;
 }
 
 .text_align_left{
@@ -185,3 +191,20 @@ menu{
     color: black;
     font-weight: 800;
 }
+
+.noGap{
+    gap: 0;
+}
+
+.oneGap{
+    gap: 1rem;
+}
+.logo{
+    width: 10.25rem;
+}
+@media screen and (max-width:600px) {
+    .container, .flex.row-reverse{
+        flex-direction: column;
+    }
+}
+

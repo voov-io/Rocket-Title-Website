@@ -1,9 +1,13 @@
+.Ourprocess-section{
+
+    overflow: hidden;
+}
 .Ourprocess{
     position: relative;
-    overflow: hidden;
     text-align: center;
 }
 .Ourprocess .container{
+
     overflow: hidden;
     grid-template-columns: 1fr .2fr 1fr ;
     grid-template-rows: repeat(auto-fill);
@@ -22,6 +26,7 @@
 
     width: 100%;
     position: relative;
+    z-index: 3;
 
 }
 .step-copy{
@@ -37,7 +42,7 @@
     position: relative!important;
     width:4em;
     height: 30%;
-
+    z-index: 4;
 }
 .flag-container span{
   width: 50px;
@@ -53,7 +58,7 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  z-index: 1;
+  z-index:6;
 }
 
 .flag-container hr{
@@ -156,12 +161,13 @@
     position: absolute;
     max-height: 45.5rem;
     width: auto;
-    z-index: -1;
+    z-index: 2;
+
 }
 
 .world{
     left: 0;
-    top: 20%; 
+    top: 20%;
 }
 .planet{
     right: 0;
